@@ -17,15 +17,15 @@ import (
 
 func main() {
 
-	client := webflow.NewClient(
-		"webflow_api_token_goes_here",
-	)
+    client := webflow.NewClient(
+        "webflow_api_token_goes_here",
+    )
 
-	info, err := client.AuthorizedInfo()
-	if err != nil {
-		panic(err)
-	}
-	
+    info, err := client.AuthorizedInfo()
+    if err != nil {
+        panic(err)
+    }
+    
     fmt.Print(info.Status)
 
 }
